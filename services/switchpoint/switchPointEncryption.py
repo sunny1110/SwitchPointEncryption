@@ -1,10 +1,12 @@
 import time
 import numpy as np
+import sys
 from itertools import cycle
+
 
 def constructKey(seedValue):
     np.random.seed(int(seedValue))
-    x = np.prod(np.random.randint(1, 100, 10))
+    x = np.prod(np.random.randint(1000000, 9999999))
     print("X: {}".format(x))
     return x
 
@@ -36,9 +38,9 @@ def newCrypt(cipherText, timeStamp):
 
 
 def main():
-    strT ="whyisntthiswork?whyisntthiswork?"
+    strT = sys.argv[1]
     print(len(strT))
-    newCrypt(strT, 500)
+    newCrypt(strT, np.random.randint(0, 20000))
 
 
 if __name__ == '__main__':
