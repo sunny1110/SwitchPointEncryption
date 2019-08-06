@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-
+import time
 
 def connectToCollection(db, collection):
     try:
@@ -45,8 +45,9 @@ def updateField(db, collection, searchCritera, updatedField):
         print("The following exception has occured in updateField: {}".format(e))
 
 def main():
-    insertObj = {"firstName": "Kevin", "lastName": "de Bruyne"}
-    addToCollection("python", "start", insertObj)
+
+    insertObj = {"username": "jack.com", "password": "******"}
+    addToCollection("switchpoint", "users", insertObj)
     # searchObj = {"lastName": "Colback"}
     # updateObj = {"lastName": "Dorsey"}
     # # so = getByKeyValue("python", "start", searchObj)
