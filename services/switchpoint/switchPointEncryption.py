@@ -3,10 +3,19 @@ import numpy as np
 import sys
 from itertools import cycle
 
+def displayTransKey(key):
+    k = ""
+    for i in range(len(key)):
+        a = str(ord(key[i]))
+        k = k+a
+
+    return k
+
+
 
 def constructKey(seedValue):
     np.random.seed(int(seedValue))
-    x = np.random.randint(1000000, 9999999)
+    x = np.random.randint(100, 999)
     return x
 
 
@@ -20,6 +29,9 @@ def reCrypt(cipherText, timeStamp):
     newKey = constructKey(now)
     diffKey = encrypt(str(oldKey), str(newKey))
     diffCipher = encrypt(cipherText, diffKey)
+    print("Old Key: {}".format(oldKey))
+    print("Transition Key: {}".format(displayTransKey(diffKey)))
+    print("Key to decrypt {} is: {}".format(diffCipher, newKey))
     returnObject = {}
     returnObject["updated"] = now
     returnObject["password"] = diffCipher

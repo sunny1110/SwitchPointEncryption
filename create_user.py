@@ -1,10 +1,13 @@
 import services.data.mongo.mongoServices as mongoClient
 import services.switchpoint.switchPointEncryption as switchPoint
 import time
+import configparser
 
+config = configparser.ConfigParser()
+config.read("settings.ini")
 
-db = "switchpoint"
-collection = "users"
+db = config["PRESETS"]["db"]
+collection = config["PRESETS"]["collection"]
 
 def main():
     username = input("Please enter username: ")
