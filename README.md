@@ -14,8 +14,7 @@ Another key feature of this design is that when moving from CipherText state to 
 <h3> Prerequisities </h3>
 
 * MongoDB
-* Python3
-* Python3's MongoDB Client
+* Python3's MongoDB Client - pymongo
 
 <h3> Setup </h3>
 
