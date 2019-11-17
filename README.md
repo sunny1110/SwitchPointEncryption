@@ -1,7 +1,7 @@
 # SwitchPointEncryption
 A Proof of Concept for SwitchPoint Encryption. 
 
-SwitchPoint Encryption is an Cryptographic Technique/System that is inspired by the idea of a "moving target" where in the integrity of sensitive data (particularly data that is subject to change often) is protected by means of merely "changing the Encryption mapping" from time to time. 
+SwitchPoint Encryption is a Cryptographic Technique/System that is inspired by the idea of a "moving target" where in the integrity of sensitive data (particularly data that is subject to change often) is protected by means of merely "changing the Encryption mapping" from time to time. 
 
 By doing the above, if the read-access of a database/datastore has been compromised, frequent updates of the "Encrypted" Sensitive Data creates a sense of ambiguity over the expiry/validity of a previously procured instance of the encrypted data. 
 In simple words, the attacker is unsure if the "sensitive data" he/she is trying to steal has changed, or if it's just an updated CipherText. 
