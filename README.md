@@ -39,5 +39,6 @@ You can verify at any point that despite the constant updates, a valid mapping s
 
 The verification may be run while the SwitchPoint Engine is still running or if the instance has been killed off. At any point the Engine may be turned off and on (with or without an updated frequency) and it will pick up where it left off. 
 
+<h3> Demo </h3>
 
-![SwitchpointDemo](demo.gif)
+<img src="demo.gif" alt="SwitchPointDemo"> </img>
