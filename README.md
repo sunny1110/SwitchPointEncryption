@@ -41,4 +41,4 @@ The verification may be run while the SwitchPoint Engine is still running or if 
 
 <h3> Demo </h3>
 
-<img src="demo.gif" alt="SwitchPointDemo" height="200%" width="200%"> </img>
+<img src="demo.gif" alt="SwitchPointDemo" height="150%" width="150%"> </img>
