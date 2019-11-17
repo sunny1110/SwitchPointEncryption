@@ -12,10 +12,13 @@ collection = config["PRESETS"]["collection"]
 username = config["PRESETS"]["username"]
 
 def main():
+
+
     while(True):
         searchObj = {}
         searchObj["username"] = username
         userObject = mongoServices.getByKeyValue(db, collection, searchObj)
+        print(userObject)
         encryptObject = switchPoint.reCrypt(userObject["password"], userObject["updated"])
         # print(userObject)
         # print("\n")
@@ -28,5 +31,7 @@ def main():
 
 
 if __name__ == '__main__':
+
+
     main()
 
