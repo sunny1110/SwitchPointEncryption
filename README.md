@@ -40,4 +40,4 @@ You can verify at any point that despite the constant updates, a valid mapping s
 The verification may be run while the SwitchPoint Engine is still running or if the instance has been killed off. At any point the Engine may be turned off and on (with or without an updated frequency) and it will pick up where it left off. 
 
 
-![SwitchpointDemo](demo/demo.gif)
+![SwitchpointDemo](demo.gif)
